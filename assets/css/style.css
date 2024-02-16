@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+label{
+    display: block !important;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+header img{
+    width: 4%;
+    margin: 0 5px 0 0;
+}
+#formulario{
+    background-color: #fff;
+    padding: 20px;
+    margin: 15% 0;
+    border-radius: 5px;
+}
+.logoForm{
+    width:40%;
+    margin: 0 auto;
+}
+#divResultado {
+    background-color: #ffffff91;
+    padding: 30px;
+    border-radius: 5px;
+}
+#dvInfoSuperHero h2{
+    color: #0d2eab;
+}
+#dvInfoSuperHero img{
+    width: 100%;
+}
+#dvGrafico{
+    margin: 13% 0 0;
+}

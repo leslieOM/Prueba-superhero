@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Chile</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <!-- FONT AWESOME-->
+    <link href="./assets/font/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/font/css/brands.css" rel="stylesheet">
+    <link href="./assets/font/css/solid.css" rel="stylesheet">
+    <!--TIPOGRAFIA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap’s -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container" id="divForm">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <form id="formulario" class="shadow">
+                    <div class="text-center mb-5">
+                        <img src="./assets/img/sh2.jpg" class="logoForm">
+                        <h2>Encuentra tú SuperHero</h2>
+                    </div>
+                    <div class="form-group w-75 mx-auto mb-3">
+                        <label>Ingresa el numero del SuperHero a buscar</label>
+                        <input type="number" class="form-control my-2" id="txtNumeroHeroe" max="733" required></input>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" type="submit" id="btnEnviar">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-3" id="divResultado">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <div id="dvInfoSuperHero">
+                    <h2 class="mb-4">SuperHero Encontrado</h2>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-md-5">
+                            <img id="imgHero">
+                        </div>
+                        <div class="col-12 col-md-7 divDatos">
+                            <label id="lblNombre"></label>
+                            <label id="lblConexiones"></label>
+                            <label id="lblPublicado"></label>
+                            <label id="lblOcupacion"></label>
+                            <label id="lblPrimeraAparicion"></label>
+                            <label id="lblAltura"></label>
+                            <label id="lblPeso"></label>
+                            <label id="lblAlianzas"></label>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div id="dvGrafico">
+                    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
